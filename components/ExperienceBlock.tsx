@@ -6,11 +6,10 @@ function ExperienceBlock({ company, link, role, time, achievements, location }: 
 
       return [(
         <div>
-            <h2>Professional Experience</h2>
             <div className = "experience-block">
-                <h3><strong>{role}</strong> <a href = {link} className = "company-name">@ {company}</a></h3>
-                <h5>{location} {time}</h5>
-                <p>{achievements}</p>
+                <div className="experience-block-title"><strong>{role}</strong> <a href = {link} className = "company-name">@ {company}</a></div>
+                <div className="experience-block-subinfo">{time} | {location} </div>
+                <div className="experience-block-desc">{achievements}</div>
             </div>
         </div>)];
 }

@@ -13,10 +13,10 @@ function App() {
     <div>
       <MeBlock/>
       <Router>
-        <div>
-          <Link to="/home">Home</Link>
-          <Link to="/experience">Experience</Link>
-          <Link to="/projects">Projects</Link>
+        <div className = "navbar-container">
+          <Link to="/home" className='navbar-element'>Home</Link>
+          <Link to="/experience" className='navbar-element'>Experience</Link>
+          <Link to="/projects" className='navbar-element'>Projects</Link>
         </div>
         <Routes>
           <Route path="/home" Component={Home} />
