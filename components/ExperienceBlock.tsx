@@ -8,7 +8,7 @@ function ExperienceBlock({ company, link, role, time, achievements, location }: 
             <div className = "experience-block">
                 <h3><strong>{role}</strong> <a href = {link} className = "company-name">@ {company}</a></h3>
                 <h5>{location} {time}</h5>
-                <body>{achievements}</body>
+                <p>{achievements}</p>
             </div>
         </div>)];
 }
