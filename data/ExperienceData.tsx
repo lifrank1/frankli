@@ -10,7 +10,15 @@ export const ExperienceData  = [
         achievements: ["Worked on an agile team"]
     },
     {
-        company: "OSU Department of Computer Science",
+        company: "ExstoBio",
+        link: "https://www.fiserv.com/en.html",
+        role: "Innovation Intern",
+        location: "Columbus, OH",
+        time: "June 2023 - August 2023",
+        achievements: ["CSE 2221"]
+    },
+    {
+        company: "OSU Department of CS",
         link: "https://www.fiserv.com/en.html",
         role: "Teaching Assistant",
         location: "Columbus, OH",

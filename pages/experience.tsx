@@ -5,26 +5,25 @@ import ExperienceBlock from '../components/ExperienceBlock'
 import React from 'react';
 
 function Experience() {
-  const testExp = ExperienceData[0]
-  
-  return [(<div className="experience-container">
+  const experienceData = ExperienceData; // Assuming ExperienceData is an array of experiences
+
+  return (
+    <div className="experience-container">
       <h2>Professional Experience</h2>
-      <ExperienceBlock
-        company={testExp.company}
-        link={testExp.link}
-        role={testExp.role}
-        location={testExp.location}
-        time={testExp.time}
-        achievements={testExp.achievements[0]}
-      />
-      <ExperienceBlock
-        company={testExp.company}
-        link={testExp.link}
-        role={testExp.role}
-        location={testExp.location}
-        time={testExp.time}
-        achievements={testExp.achievements[0]}
-      /></div>)]
+      {experienceData.map((exp, index) => (
+        <ExperienceBlock
+          key={index} // Provide a unique key for each item in the map
+          company={exp.company}
+          link={exp.link}
+          role={exp.role}
+          location={exp.location}
+          time={exp.time}
+          achievements={exp.achievements}
+        />
+      ))}
+    </div>
+  );
 }
+
 
 export default Experience;

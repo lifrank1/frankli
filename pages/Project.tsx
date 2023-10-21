@@ -1,9 +1,23 @@
 import React from "react";
+import ProjectBlock from "../components/ProjectBlock";
+import { ProjectData } from "../data/ProjectData";
 
 function Projects() {
-    return (<div>
-            <h2>Projects</h2>
-        </div>);
-}
+    const projectData = ProjectData; // Assuming ExperienceData is an array of experiences
+  
+    return (
+      <div className="experience-container">
+        <h2>Projects</h2>
+        {projectData.map((exp, index) => (
+          <ProjectBlock
+            name={exp.name}
+            link={exp.link}
+            techstack={exp.techstack}
+            desc={exp.desc}
+          />
+        ))}
+      </div>
+    );
+  }
 
 export default Projects
