@@ -1,16 +1,16 @@
 import React from "react";
 
 function ExperienceBlock({ company, link, role, time, achievements, location }: { company: string, link: string, role: string, time: string, achievements: string, location: string }) {
-    
+
       return [(
-        <html>
-            <h1>Professional Experience</h1>
-            <div className = "experienceContainer">
-                <h1><strong>{role}</strong> <a href = {link}>@ {company}</a></h1>
-                <h2>{location} {time}</h2>
-                <p>{achievements}</p>
+        <div>
+            <h2>Professional Experience</h2>
+            <div className = "experience-block">
+                <h3><strong>{role}</strong> <a href = {link} className = "company-name">@ {company}</a></h3>
+                <h5>{location} {time}</h5>
+                <body>{achievements}</body>
             </div>
-        </html>)];
+        </div>)];
 }
 
 export default ExperienceBlock

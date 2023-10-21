@@ -1,3 +1,4 @@
+import React from "react";
 
 // PascalCasing <- used for creating a function component. capitalize every word
 function Message() {
