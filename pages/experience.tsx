@@ -1,11 +1,13 @@
 // Import component before using it
-import '../src/App.css'
-import {ExperienceData} from '../data/ExperienceData';
-import ExperienceBlock from '../components/ExperienceBlock'
-import React from 'react';
+import "../src/App.css";
+import { ExperienceData } from "../data/ExperienceData";
+import { LeadershipData } from "../data/LeadershipData";
+import ExperienceBlock from "../components/ExperienceBlock";
+import React from "react";
 
 function Experience() {
-  const experienceData = ExperienceData; // Assuming ExperienceData is an array of experiences
+  const experienceData = ExperienceData;
+  const leadershipData = LeadershipData;
 
   return (
     <div className="experience-container">
@@ -21,9 +23,20 @@ function Experience() {
           achievements={exp.achievements}
         />
       ))}
+      <h2>Leadership Experience</h2>
+      {leadershipData.map((exp, index) => (
+        <ExperienceBlock
+          key={index} // Provide a unique key for each item in the map
+          company={exp.company}
+          link={exp.link}
+          role={exp.role}
+          location={exp.location}
+          time={exp.time}
+          achievements={exp.achievements}
+        />
+      ))}
     </div>
   );
 }
-
 
 export default Experience;

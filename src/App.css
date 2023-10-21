@@ -62,7 +62,7 @@
 }
 
 .experience-block-subinfo {
-  color: darkgrey;
+  color: rgb(124, 120, 120);
   padding: 7px;
 }
 
@@ -75,7 +75,7 @@
   text-align: left;
 }
 
-.company-name {
+.red-no-underline {
   text-decoration: none;
   color: red;
 }
