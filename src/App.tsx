@@ -1,26 +1,30 @@
 // Import component before using it
 import './App.css'
-import { BrowserRouter as Router, Route } from 'react-router-dom';
-import { Link } from 'react-router-dom';
+import { Link, Route, BrowserRouter as Router, Routes} from 'react-router-dom';
 import Experience from '../pages/experience';
-import Landing from '../pages/Landing';
+import Home from '../pages/Home';
 import Projects from '../pages/Project';
 import React from 'react';
+import MeBlock from '../components/MeBlock';
 
 function App() {
 
   return (
     <div>
-      <p>Hello World</p>
-      <h3>Hi, I'm Frank!</h3>
-      <p><Link to='../pages/experience'>Experience</Link></p>
-      {/* <Router>
-        <Route path="/experience" element={<Experience/>} />
-        <Route path="/projects" element={<Projects/>} />
-        <Route path="/" element={<Landing/>} />
-      </Router> */}
+      <MeBlock/>
+      <Router>
+        <div>
+          <Link to="/home">Home</Link>
+          <Link to="/experience">Experience</Link>
+          <Link to="/projects">Projects</Link>
+        </div>
+        <Routes>
+          <Route path="/home" Component={Home} />
+          <Route path="/experience" Component={Experience} />
+          <Route path="/projects" Component={Projects} />
+        </Routes>
+      </Router>
     </div>
-    
   );
 }
 

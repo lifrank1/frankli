@@ -1,4 +1,6 @@
 import React from "react";
+import '../src/App.css'
+
 
 function ExperienceBlock({ company, link, role, time, achievements, location }: { company: string, link: string, role: string, time: string, achievements: string, location: string }) {
 
