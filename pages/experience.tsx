@@ -11,7 +11,9 @@ function Experience() {
 
   return (
     <div className="experience-container">
-      <h2>Professional Experience</h2>
+      <h1>
+        <u>Professional Experience</u>
+      </h1>
       {experienceData.map((exp, index) => (
         <ExperienceBlock
           key={index} // Provide a unique key for each item in the map
@@ -23,7 +25,9 @@ function Experience() {
           achievements={exp.achievements}
         />
       ))}
-      <h2>Leadership Experience</h2>
+      <h1>
+        <u>Leadership Experience</u>
+      </h1>
       {leadershipData.map((exp, index) => (
         <ExperienceBlock
           key={index} // Provide a unique key for each item in the map
