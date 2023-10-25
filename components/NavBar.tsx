@@ -6,7 +6,7 @@ import Home from "../pages/Home";
 import Projects from "../pages/Project";
 
 function NavBar() {
-  return [
+  return (
     <html>
       <div className="nav-bar">
         <Router>
@@ -28,8 +28,8 @@ function NavBar() {
           </Routes>
         </Router>
       </div>
-    </html>,
-  ];
+    </html>
+  );
 }
 
 export default NavBar;

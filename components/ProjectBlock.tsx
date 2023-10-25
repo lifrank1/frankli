@@ -12,15 +12,15 @@ function ProjectBlock({
   techstack: string;
   desc: string;
 }) {
-  return [
+  return (
     <div>
       <div className="experience-block">
         <div className="experience-block-title">{name}</div>
         <div className="experience-block-subinfo">{techstack} </div>
         <div className="experience-block-desc">{desc}</div>
       </div>
-    </div>,
-  ];
+    </div>
+  );
 }
 
 export default ProjectBlock;

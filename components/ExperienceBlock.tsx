@@ -16,7 +16,7 @@ function ExperienceBlock({
   achievements: string[];
   location: string;
 }) {
-  return [
+  return (
     <div>
       <div className="experience-block">
         <div className="experience-block-title">
@@ -34,8 +34,8 @@ function ExperienceBlock({
           ))}
         </ul>
       </div>
-    </div>,
-  ];
+    </div>
+  );
 }
 
 export default ExperienceBlock;
