@@ -3,7 +3,7 @@ import React from "react";
 function Home() {
   return (
     <div className="home-text">
-      <h2>Hi, I'm Frank!</h2>
+      <h2>👋 Hi, I'm Frank!</h2>
       <p>
         I'm a junior studying computer science & engineering at the Ohio State
         University
@@ -23,7 +23,8 @@ function Home() {
 
       <p>
         Outside of academics, I enjoy playing all kinds of sports, watching
-        movies, and lifting!{" "}
+        movies, and lifting. I love to try new things; currently, I'm learning
+        how to cook and self teaching guitar.{" "}
       </p>
 
       <p>
