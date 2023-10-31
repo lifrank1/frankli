@@ -22,15 +22,18 @@ function Home() {
       </p>
 
       <p>
-        This past summer I interned at Fiserv, where I worked on the
-        Cloud Security and Architecture Team to migrate services to a serverless
+        This past summer I interned at Fiserv, where I worked on the Cloud
+        Security and Architecture Team to migrate services to a serverless
         architecture and automate data validation and cloud environment security
       </p>
 
       <p>
-        On campus, I research with Laine Rumreich. I'm also involved in the Big
-        Data Analytics Association where I work on new member initiatives and
-        helped redesign and rebuild an outdated website.
+        On campus, I research with Laine Rumreich on the effect of using XML vs
+        JSON in OSU CSE core classes; within this role, I've written a JSON
+        tokenizer/parser in Java and solving complex errors such as a regex
+        expression overflow. I'm also involved in the Big Data Analytics
+        Association where I work on new member initiatives and helped redesign
+        and rebuild an outdated website.
       </p>
 
       <p>
