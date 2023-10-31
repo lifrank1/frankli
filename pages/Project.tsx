@@ -4,7 +4,6 @@ import { ProjectData } from "../data/ProjectData";
 
 function Projects() {
   const projectData = ProjectData; // Assuming ExperienceData is an array of experiences
-
   return (
     <div className="experience-container">
       <h1>
