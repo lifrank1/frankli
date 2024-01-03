@@ -13,10 +13,15 @@ function Home() {
           <li>Software Components 1 & 2</li>
           <li>Discrete Structures 1 & 2</li>
           <li>Foundations of Higher Mathematics (Proofs)</li>
-          <li>Low-Level Programming and Computer Organization</li>
+          <li>Low-Level Programming and Computer Organization 1 & 2</li>
           <li>Probability and Statistics for Engineers</li>
           <li>Engineering Mathematics</li>
+          <li>Introduction to Database Systems</li>
+          <li>Introduction to Artificial Intelligence</li>
+          <li>Introduction to Computer Architecture</li>
           <li>Introduction to Digital Logic</li>
+          <li>Computer Networking and Internet Technologies</li>
+          <li>Design, Development, and Documentation of Web Applications</li>
           <li>Linear Algebra</li>
         </ul>
       </p>
