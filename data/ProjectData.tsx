@@ -1,5 +1,11 @@
 export const ProjectData = [
   {
+    name: "GroupMe Antispam Bot",
+    link: "google.com",
+    techstack: "Python, AWS",
+    desc: "Greated a deployable GroupMe bot to delete messages based on spam messages send in group chats, classified by a machine learning model. Used AWS to host the bot and the model, and used AWS Lambda to run the bot on a schedule.",
+  },
+  {
     name: "Corporate Transportation Dashboard",
     link: "google.com",
     techstack: "Python, pandas",
